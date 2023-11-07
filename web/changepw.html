@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    
+       <style>
+        .border{
+            display: flex;
+            margin: 2px 300px 20px 266px;
+            height: 450px;
+            width: 565px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+            justify-items: center;
+            align-items: center;
+        }
+        body{
+            display: flex;
+            background-image: url("./ps.jpg");
+            background-position: center;
+            background-size: cover;
+            color:aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            min-width: 100vw;  
+            overflow: hidden; 
+        }
+        .box{
+            background-color: rgba(0, 0, 0, 0.3);
+             border: none;
+             position: relative;
+             font-size: 20px;
+             color: rgba(255, 255, 255, 0.8);
+            left: 25%;
+            padding: 0.55em 0.75em;
+        }
+        .txt{
+            font-size: 27px;
+            color: rgba(255, 255, 255, 0.8);
+            padding-left: 25%;
+        }
+        .button{
+            position: relative;
+            left: 42%;
+            font-size: 19px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: rgba(255, 255, 255, 0.8);
+            border: none;
+            width: 85px;
+            height: 45px;
+        }
+        /* input[type="text"],input[type="password"]{
+        background-color:rgba(0, 0, 0, 0.3);
+    } */
+    input[type="username"]:focus, input[type="password"]:focus{
+        background-color: rgba(0, 0, 0, 0.5);
+        outline: none;
+    }
+    </style>
+    <body>
+        <div class="border">
+        <form action="changepw.jsp">
+            <p style="text-align: justify; font-size: 40px; margin-top: 0px; padding: 0rem 12.77rem;"><b></b>CHANGE PASSWORD</p>
+            <label class="txt">ADMIN NAME</label><br>
+            <input class="box" placeholder="username" type="username" name="username" required><br><br>
+
+            <label class="txt">CURRENT PASSWORD</label><br>
+            <input class="box" placeholder=" current password" type="password"  name="password"  required><br><br><br><br>
+
+            <label class="txt">NEW PASSWORD</label><br>
+            <input class="box" placeholder=" new password" type="password"  name="npass"  required><br><br>
+
+            
+             <input type="submit" class="button" value="CHANGE">
+        </form>
+    </div>
+    </body>
+</html>

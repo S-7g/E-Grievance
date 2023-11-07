@@ -1,0 +1,13 @@
+{
+    "elements": {
+        "form": {
+            "attributes": {
+                "method": {},
+                "action": {},
+                "id": {}
+            }
+        },
+        "center": {}
+    },
+    "attributes": {}
+}
